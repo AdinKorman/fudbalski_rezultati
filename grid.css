@@ -3,14 +3,14 @@
 .sadrzaj{
 	display: grid;
 	grid-template-areas: 'header header header header header' 
-	'sidebar_left content content content sidebar_right'
-	'sidebar_left content content content sidebar_right'
-	'sidebar_left content content content sidebar_right'
-	'sidebar_left content content content sidebar_right'
-	'sidebar_left content content content sidebar_right'
+	'content content content content content'
+	'content content content content content'
+	'content content content content content'
+	'content content content content content'
+	'content content content content content'
 	'footer footer footer footer footer';
 	grid-gap: 10px;
-	background-color: #309730;
+	background-color: #306597;
 	padding: 10px;
 	min-height: 100vh;
 	height:fit-content;
@@ -97,21 +97,6 @@ p{
 .content p{
 	align-content: center;
 }
-
-.calendar {
-	width: 100%;
-	border-collapse: collapse;
-}
-.calendar th, .calendar td {
-	border: 1px solid #dddddd;
-	padding: 10px;
-	text-align: center;
-}
-.calendar .highlight {
-	background-color: rgb(21, 255, 0);
-	color: white;
-}
-
 body {
 	font-family: Arial, sans-serif;
 	background-color: #f8f8f8;
@@ -132,7 +117,7 @@ body {
 	margin-bottom: 10px;
 }
 .section .item {
-	background-color: #006400;
+	background-color: rgb(0, 158, 231);
 	color: #fff;
 	padding: 5px;
 	margin-bottom: 5px;
@@ -149,7 +134,7 @@ body {
 	gap: 20px;
 }
 .section {
-	background-color: #008000;
+	background-color: rgb(0, 158, 231);
 	padding: 10px;
 	border-radius: 5px;
 	cursor: pointer;
@@ -159,7 +144,7 @@ body {
 	margin-bottom: 10px;
 }
 .section .item {
-	background-color: #006400;
+	background-color: #003764;
 	color: #fff;
 	padding: 5px;
 	margin-bottom: 5px;
@@ -167,10 +152,10 @@ body {
 }
 .table {
 	display: none;
-	background-color: #fff;
+	background-color: #9acee6;
 	padding: 10px;
 	margin-top: 10px;
-	border: 1px solid #ddd;
+	border: 1px solid #9acee6;
 	border-radius: 5px;
 }
 }
@@ -181,7 +166,7 @@ body {
 	display: flex;
 }
 .teams, .players {
-	border: 1px solid green;
+	border: 1px solid rgb(0, 158, 231);
 	margin: 10px;
 }
 .teams {
@@ -191,7 +176,7 @@ body {
 	width: 50%;
 }
 .header {
-	background-color: green;
+	background-color: rgb(0, 158, 231);
 	color: white;
 	text-align: center;
 	padding: 10px;
@@ -199,10 +184,10 @@ body {
 .grid {
 	display: grid;
 	grid-template-rows: repeat(5, 1fr);
-	border-top: 1px solid green;
+	border-top: 1px solid rgb(13, 0, 128);
 }
 .grid div {
-	border-bottom: 1px solid green;
+	border-bottom: 1px solid rgb(0, 51, 128);
 	padding: 10px;
 }
 .players-list {
@@ -217,10 +202,10 @@ body {
 	height: 100vh;
 }
 .menu {
-	width: 1100px;
+	width: 1250px;
 }
 .menu-item {
-	background-color: green;
+	background-color: rgb(0, 158, 231);
 	color: white;
 	text-align: center;
 	padding: 15px;
@@ -231,16 +216,229 @@ body {
 	font-weight: bold;
 }
 .menu-item:hover {
-	background-color: darkgreen;
+	background-color: rgb(0, 119, 255);
 }
 .language-options {
 	display: flex;
 	justify-content: space-around;
 	margin: 10px 0;
 }
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+.login-container {
+	background-color: rgb(0, 158, 231);
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 1250px;
+	text-align: center;
+}
+.login-container h1 {
+	margin-bottom: 20px;
+}
+.login-container input[type="text"], .login-container input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.login-container button {
+	background-color: #0288d1;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.login-container button:hover {
+	background-color: #0277bd;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
 
+header {
+    background-color: #0288d1;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #0081eb;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0277bd;
+    color: #fff;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #0288d1;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.matches {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.matches h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.match {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.match:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0288d1;
+    color: #fff;
+    margin-top: 20px;
+}
 /*Kraj min-width:576px*/
+.news, .players {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news h2, .players h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.news-item h3 {
+    margin: 0 0 5px;
+}
+
+.news-item a {
+    color: #0288d1;
+    text-decoration: none;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player {
+    text-align: center;
+}
+
+.player img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: #e3f2fd; /* Svijetloplava pozadina */
+	margin: 0;
+	padding: 0;
+}
+.navbar {
+	background-color: #1565c0; /* Tamnoplava boja za navigaciju */
+	overflow: hidden;
+	padding: 10px;
+}
+.navbar a {
+	float: left;
+	display: block;
+	color: #165fc0; /* Bijeli tekst */
+	text-decoration: none;
+	padding: 10px 20px;
+	font-weight: bold;
+}
+.navbar a:hover {
+	background-color: #0d47a1; /* Nijansa tamnoplave na hover */
+}
+.container {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+.box {
+	background-color: #90caf9; /* Srednje plava pozadina */
+	padding: 15px;
+	border-radius: 10px;
+	width: 45%;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Suptilna sjena */
+}
+.box h2 {
+	text-align: center;
+	color: #1e88e5; /* Tamnija plava za naslov */
+}
+.box a {
+	display: block;
+	color: #000000; /* Bijeli tekst za linkove */
+	background-color: #1e88e5; /* Tamnoplavi linkovi */
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.box a:hover {
+	background-color: #1565c0; /* Nijansa tamnoplave na hover */
+}
 
 @media only screen and (max-width:576px){
 .sadrzaj{
